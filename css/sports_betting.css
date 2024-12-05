@@ -1,0 +1,270 @@
+:root {
+  --primary-color: #4b0082;
+  --secondary-color: #6a0dad;
+  --accent-color: #b366cc;
+  --card-bg-color: #310031;
+  --text-color: #ffffff;
+  --hover-color: #8a2be2;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+main {
+  flex: 1;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+footer {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--hover-color);
+}
+
+@media (max-width: 1024px) {
+  .player-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    font-size: 16px;
+  }
+
+  .team-card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .content {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    margin-bottom: 10px;
+  }
+
+  .team-card,
+  .player-card {
+    font-size: 14px;
+  }
+}
+.player-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.stats-column {
+  flex: 1;
+  text-align: center;
+}
+
+.team-logo {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+}
+
+.betting-line {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.bet-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.bet-input {
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+}
+
+.bet-button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.bet-button:hover {
+  background-color: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+  .player-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .team-logo {
+    width: 80px;
+  }
+
+  .bet-section {
+    width: 100%;
+  }
+
+  .bet-input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .player-container {
+    gap: 5px;
+  }
+
+  .bet-input {
+    font-size: 14px;
+  }
+
+  .bet-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tab {
+  flex: 1;
+  border: 1px solid var(--accent-color);
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab.active {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.tab:hover {
+  background-color: var(--hover-color);
+}
+
+.content {
+  display: none;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.content.active {
+  display: block;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--accent-color);
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var(--card-bg-color);
+  color: var(--text-color);
+}
+
+.team-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--accent-color);
+}
+
+.modal-title,
+.form-label {
+  color: #000 !important;
+}
+
+.modal-content {
+  background-color: #fff !important;
+}
+
+/* 본문 여백 */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin-top: 80px;
+}
+
+/* 제목 스타일 */
+h1 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: var(--accent-color);
+}

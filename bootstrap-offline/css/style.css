@@ -1,0 +1,115 @@
+  /* index-video part */
+  .index-video {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .index-video-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* index-navigation bar part */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5); /* Translucent nav */
+  }
+  
+  .navbar .navbar-brand img {
+    width: 150px;
+    height: auto;
+  }
+  
+/* index-text part */
+  .index-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 5;
+  }
+  
+  .index-text-title {
+    font-size: 5rem;
+    font-weight: 800;
+    color: aliceblue;
+    margin-bottom: 20px;
+  }
+  
+  .index-text button {
+    margin: 10px;
+    padding: 80px 10px;
+    font-size: 1.5rem;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;/
+  }
+  
+  .index-text button:hover {
+    color: rgb(27, 19, 19);
+    background: rgba(255, 255, 255, 0.831);
+  }
+
+  .index-text p {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  /* footer */
+    footer {
+      background-color: var(--card-bg-color);
+      padding: 20px;
+      color: var(--text-color);
+      text-align: center;
+      font-size: 14px;
+    }
+  
+  /* Responsive style (media query) */
+  @media (max-width: 1200px) {
+    .index-text-title {
+      font-size: 4rem;
+    }
+    .index-text button {
+      padding: 60px 20px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .index-text-title {
+      font-size: 3rem;
+    }
+    .index-text button {
+      padding: 50px 20px;
+      font-size: 1rem;
+    }
+    .index-text p {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 697px) {
+    .index-text-title {
+      font-size: 2rem;
+    }
+    .index-text button {
+      padding: 20px 20px;
+      font-size: 0.8rem;
+    }
+  }
+  

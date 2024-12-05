@@ -1,0 +1,95 @@
+:root {
+  --background-color: #4b0082;
+  --navbar-bg-color: rgba(0, 0, 0, 0.5);
+  --navbar-text-color: #ffffff;
+  --card-bg-color: #310031;
+  --card-border-color: hsl(279, 63%, 74%);
+  --text-color: hsl(0, 0%, 100%);
+  --highlight-color: #60206d;
+  --link-hover-color: #a772b7;
+
+  --navbar-height: 80px;
+  --padding-small: 10px;
+  --padding-medium: 0.8rem;
+  --font-size-large: 1.2rem;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  --logo-width: 150px;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: var(--navbar-bg-color);
+  color: var(--navbar-text-color);
+}
+
+.navbar .navbar-brand img {
+  width: var(--logo-width);
+  height: auto;
+}
+
+.navbar .nav-link {
+  color: var(--navbar-text-color);
+}
+
+.navbar .nav-link:hover {
+  color: var(--link-hover-color);
+}
+
+body {
+  background-color: var(--background-color);
+  padding-top: var(--navbar-height);
+}
+
+.date-section {
+  background-color: var(--link-hover-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.date-title {
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+  padding: var(--padding-medium) 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-weight: bold;
+  font-size: var(--font-size-large);
+}
+
+.match-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.match-table th {
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+  padding: var(--padding-small);
+  text-align: left;
+  border-bottom: 2px solid var(--card-border-color);
+}
+
+.match-table td {
+  padding: var(--padding-small);
+  text-align: left;
+  border-bottom: 1px solid var(--card-border-color);
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+  border: 1px solid var(--highlight-color);
+}
+
+.team-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border-radius: 50%;
+}

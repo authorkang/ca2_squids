@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #4b0082;
+  --secondary-color: #6a0dad;
+  --accent-color: #b366cc;
+  --card-bg-color: #310031;
+  --text-color: #ffffff;
+  --hover-color: #8a2be2;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin-top: 80px;
+}
+
+main {
+  flex: 1;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+footer {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--hover-color);
+}
+
+.contact-container {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-label {
+  color: var(--text-color);
+}
+
+.form-control {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-submit {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.btn-submit:hover {
+  background-color: var(--hover-color);
+}

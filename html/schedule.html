@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to League Digest, your go-to platform for sports schedules, rankings, and betting strategies." />
+    <meta name="keywords" content="sports, schedules, betting, rankings, community" />
+    <meta name="author" content="League Digest Team" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#6c757d" />
+
+    <title>Schedule</title>
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap-offline/css/bootstrap.min.css" />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="../bootstrap-offline/css/style.css" />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style_schedule.css" />
+  </head>
+  <body>
+    <header>
+      <!-- nav -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../html/index.html">
+            <img src="../img/index_logo_image.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../html/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/schedule.html">SCHEDULE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/community.html">COMMUNITY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/rank.html">RANK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/sports_betting.html"
+                  >BETTING</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/contact.html">ContactUs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container mt-4">
+      <ul class="nav nav-tabs" id="yearTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="2024-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#2024"
+            type="button"
+            role="tab"
+            aria-controls="2024"
+            aria-selected="true"
+          >
+            2024
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="2025-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#2025"
+            type="button"
+            role="tab"
+            aria-controls="2025"
+            aria-selected="false"
+          >
+            2025
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="yearTabsContent">
+        <div
+          class="tab-pane fade show active"
+          id="2024"
+          role="tabpanel"
+          aria-labelledby="2024-tab"
+        >
+          <div id="schedule2024"></div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="2025"
+          role="tabpanel"
+          aria-labelledby="2025-tab"
+        >
+          <div id="schedule2025"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; All copyrights are reserved by League Digest</p>
+    </footer>
+    <!-- bootstrap JavaScript -->
+    <script src="../bootstrap-offline/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/schedule.js"></script>
+  </body>
+</html>

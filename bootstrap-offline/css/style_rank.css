@@ -1,0 +1,155 @@
+/* color */
+:root {
+    --primary-color: #4B0082;
+    --secondary-color: #6A0DAD;
+    --accent-color: #B366CC;
+    --card-bg-color: #310031;
+    --text-color: #FFFFFF;
+    --hover-color: #8A2BE2;
+  }
+  
+/* basic */
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  main {
+    flex: 1;
+    margin-top: 80px;
+  }
+  
+  h1 {
+    margin: 50px 0 20px;
+    color: var(--accent-color);
+  }
+  
+  /* tab part */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .tab {
+    flex: 1;
+    border: 1px solid var(--accent-color);
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 18px;
+  }
+  
+  .tab.active {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .tab:hover {
+    background-color: var(--hover-color);
+  }
+  
+  /* content part */
+  .content {
+    display: none;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .content.active {
+    display: block;
+  }
+  
+  /* content-team part */
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .team-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--accent-color);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+  }
+  
+  .team-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--accent-color);
+  }
+  
+  /* content-player part */
+  .player-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .stats-column {
+    flex: 1;
+  }
+  
+  .stats-column h2 {
+    margin-bottom: 10px;
+    color: var(--accent-color);
+  }
+
+  .player-card {
+    border: 1px solid var(--accent-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+  }
+  
+  /* Responsive style (media query) */
+  @media (max-width: 1024px) {
+    .player-container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tabs {
+      font-size: 16px;
+    }
+    .team-card img {
+      width: 40px;
+      height: 40px;
+    }
+    .content {
+      width: 95%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tabs {
+      flex-direction: column;
+    }
+    .tab {
+      margin-bottom: 10px;
+    }
+    .team-card, .player-card {
+      font-size: 14px;
+    }
+  }
+  
